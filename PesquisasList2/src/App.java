@@ -8,7 +8,7 @@ public class App {
         feira1.mostrarCompras();
         feira1.removerItem("frango");
         feira1.mostrarCompras();
-        
-        System.out.println(feira1.calcularPreco());
+
+        System.out.println( "Total: " + feira1.calcularPreco());
     }
 }
