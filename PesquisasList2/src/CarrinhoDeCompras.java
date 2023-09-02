@@ -23,15 +23,17 @@ public class CarrinhoDeCompras {
         }
       feiraDoMes.removeAll(removeItem);
     }
-
+ 
     public double calcularPreco(){
         double totalCompras = 0;
-        for(Item i : feiraDoMes){
-           totalCompras = totalCompras + i.getPreco();
+        if(!feiraDoMes.isEmpty()){
+            for(Item i : feiraDoMes){
+              totalCompras = totalCompras + (i.getPreco() * i.getQuantidade());
+            }
         }
-
         return totalCompras;
     }
+    
     public void mostrarCompras(){
         System.out.println(feiraDoMes);
     }
