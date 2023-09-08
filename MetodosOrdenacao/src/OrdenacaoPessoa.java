@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class OrdenacaoPessoa {
+public class OrdenacaoPessoa{
     List <Pessoa> pessoasList;
 
     public OrdenacaoPessoa() {
